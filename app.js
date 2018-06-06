@@ -1,5 +1,4 @@
 const fs = require('fs');
-const _ = require('lodash');
 const yargs = require('yargs');
 
 const notes = require('./notes.js');
@@ -33,9 +32,6 @@ var textToAdd = '\n';
 for(var i = 3; i < process.argv.length; i++) {
     textToAdd += process.argv[i] + ' ';
 }
-//console.log('Command: ', command);
-//console.log('Process argv:', process.argv);
-//console.log('Yargs argv:', argv);
 
 if(command === 'add') {
     var note = notes.addNote(argv.title, argv.body);
@@ -45,11 +41,6 @@ if(command === 'add') {
     } else {
         console.log('Note title already in use!');
     }
-    // fs.appendFile('newNote.txt', textToAdd, (err) => {
-    //     if(err) {
-    //         console.log('Oops, something went wrong!');
-    //     }
-    // });
 } else if(command === 'list') {
     var notesAll = notes.getAll();
     console.log(`Listing ${notesAll.length} note(s).`);
