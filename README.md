@@ -19,4 +19,4 @@ test
 ```
 yarn run dev-server
 ```
-Some `dewfrf` efweferf
+Some `command_here` some
