@@ -14,9 +14,6 @@ And repeat
 ```
 until finished
 ```
-test
+Test
 
-```
-yarn run dev-server
-```
 Some `command_here` some
